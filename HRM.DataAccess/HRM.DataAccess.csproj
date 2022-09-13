@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42F1FE17-DD3F-4E06-A58B-CD7F7B65B409}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRM.DataAccess</RootNamespace>
+    <AssemblyName>HRM.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\HRM.DataAccess.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HRM.DataAccess.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HRM\DLL\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HRM\DLL\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\HRM\DLL\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Catalogs\DanhMucCapTuyenDungBLL.cs" />
+    <Compile Include="Catalogs\DanhMucChucDanhBLL.cs" />
+    <Compile Include="Catalogs\DanhMucChuyenNganhBLL.cs" />
+    <Compile Include="Catalogs\DanhMucDanTocBLL.cs" />
+    <Compile Include="Catalogs\DanhMucHuyenBLL.cs" />
+    <Compile Include="Catalogs\DanhMucLyDoBLL.cs" />
+    <Compile Include="Catalogs\DanhMucManHinhBLL.cs" />
+    <Compile Include="Catalogs\DanhMucNgoaiNguBLL.cs" />
+    <Compile Include="Catalogs\DanhMucPhongBanBLL.cs" />
+    <Compile Include="Catalogs\DanhMucPhuCapBLL.cs" />
+    <Compile Include="Catalogs\DanhMucQuanHeBLL.cs" />
+    <Compile Include="Catalogs\DanhMucTinhBLL.cs" />
+    <Compile Include="Catalogs\DanhMucTinhTrangHonNhanBLL.cs" />
+    <Compile Include="Catalogs\DanhMucTonGiaoBLL.cs" />
+    <Compile Include="Catalogs\DanhMucTrinhDoBLL.cs" />
+    <Compile Include="Catalogs\DanhMucTrinhDoTinHocBLL.cs" />
+    <Compile Include="Catalogs\DanhMucYeuCauCongViec.cs" />
+    <Compile Include="Catalogs\DM_BieuMauBLL.cs" />
+    <Compile Include="Catalogs\DM_ChiTietThuongNgayLeBLL.cs" />
+    <Compile Include="Catalogs\DM_ThuongNgayLeBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_BangLuongBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_ChamCongBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_KhoaLuongBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_TamUngBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_TongHopChamCongBLL.cs" />
+    <Compile Include="ChamCong_TinhLuong\TL_TongHopChamCongNhanVienBLL.cs" />
+    <Compile Include="Common\DataAccessCommon.cs" />
+    <Compile Include="Common\LayerCommon.cs" />
+    <Compile Include="Common\StructsEnums.cs" />
+    <Compile Include="DataAccess\DataAccessBase.cs" />
+    <Compile Include="NguoiDung\DBConnectionBLL.cs" />
+    <Compile Include="NguoiDung\DM_ManHinhBLL.cs" />
+    <Compile Include="NguoiDung\QL_NguoiDungBLL.cs" />
+    <Compile Include="NguoiDung\QL_NguoiDungNhomNguoiDungBLL.cs" />
+    <Compile Include="NguoiDung\QL_NhomNguoiDungBLL.cs" />
+    <Compile Include="NguoiDung\QL_PhanQuyenBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="QuanLyNhanVien\NV_HopDongBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_NhanVienBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhKhenThuongBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhKyLuatBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhNangHeSoChuyenMonBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhNangHeSoLuongBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhThangChucBLL.cs" />
+    <Compile Include="QuanLyNhanVien\NV_QuyetDinhThoiViecBLL.cs" />
+    <Compile Include="QuanLyNhanVien\TD_QuaTrinhCongTacBLL.cs" />
+    <Compile Include="TuyenDung\TD_BangKeHoachTuyenDungBLL.cs" />
+    <Compile Include="TuyenDung\TD_ChiTietKeHoachThuViecBLL.cs" />
+    <Compile Include="TuyenDung\TD_ChiTietKeHoachTuyenDungBLL.cs" />
+    <Compile Include="TuyenDung\TD_KeHoachThuViecBLL.cs" />
+    <Compile Include="TuyenDung\TD_NhanVienBLL.cs" />
+    <Compile Include="TuyenDung\TD_PhieuYeuCauTuyenDungBLL.cs" />
+    <Compile Include="TuyenDung\TD_UngVienBLL.cs" />
+    <Compile Include="TuyenDung\TD_YeuCauCongViecBLL.cs" />
+    <Compile Include="TuyenDung\ThongBaoTuyenDungBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HRM.Entities\HRM.Entities.csproj">
+      <Project>{1379C791-7FED-4F1D-B5F0-72608A4D854D}</Project>
+      <Name>HRM.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QuanLyNhanVien\TD_QuanHeGiaDinhBLL.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

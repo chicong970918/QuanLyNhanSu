@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Tinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AddItem1.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG028" xml:space="preserve">
+    <value>{0} đã lên chương trình thử việc! Không thể xóa!</value>
+  </data>
+  <data name="PhongBan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhongBan2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Word.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_Message_Title" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data name="MSG008" xml:space="preserve">
+    <value>{0} đã tồn tại.</value>
+  </data>
+  <data name="Tren" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tren.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG040" xml:space="preserve">
+    <value>Bạn không thể xem {0} của người khác.</value>
+  </data>
+  <data name="UserGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserGroup.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeHoachTD1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeHoachTD1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resetpassword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resetpassword.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nha" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nha.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NgoaiNgu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NgoaiNgu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel_edit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel_edit2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChucDanh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChucDanh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThuViec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThuViec.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG017" xml:space="preserve">
+    <value>{0} phải lớn hơn hoặc bằng {1}.</value>
+  </data>
+  <data name="Canhan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Canhan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resrt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resrt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Printer5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG039" xml:space="preserve">
+    <value>Bảng lương tháng {0} đã bị khóa.</value>
+  </data>
+  <data name="user1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG029" xml:space="preserve">
+    <value>Không tìm thấy biểu mẫu!</value>
+  </data>
+  <data name="useruser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\useruser.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bonhiem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bonhiem.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG037" xml:space="preserve">
+    <value>Đã tính lương cho tháng {0}.</value>
+  </data>
+  <data name="shutdowns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdowns.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG034" xml:space="preserve">
+    <value>Đã chấm công cho nhân viên này !</value>
+  </data>
+  <data name="HopDong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HopDong.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG048" xml:space="preserve">
+    <value>Không thể kết nối tới cơ sở dữ liệu. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="User" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG003" xml:space="preserve">
+    <value>{0} và {1} không đúng. Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="MSG_ERROR" xml:space="preserve">
+    <value>Chương trình xảy ra lỗi. Vui lòng liên hệ tác giả</value>
+  </data>
+  <data name="nhansu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nhansu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG035" xml:space="preserve">
+    <value>Dữ liệu tháng {0} năm {1} đã được đỗ.</value>
+  </data>
+  <data name="MSG044" xml:space="preserve">
+    <value>Chỉ có thể tính lương cho tháng thôi việc có hiệu lực vui lòng kiểm tra ngày hiệu lực của quyết định thôi việc.</value>
+  </data>
+  <data name="MSG014" xml:space="preserve">
+    <value>Chương trình đang chạy. Không thể chạy nhiều phiên bản cùng lúc.</value>
+  </data>
+  <data name="Luong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Luong.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThongBao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThongBao.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_Warning_Title" xml:space="preserve">
+    <value>Cảnh báo!!!</value>
+  </data>
+  <data name="MSG022" xml:space="preserve">
+    <value>Không có dữ liệu để xuất</value>
+  </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhongBan1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhongBan1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChamCong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChamCong.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG032" xml:space="preserve">
+    <value>Sẽ được tạo khi bổ nhiệm.</value>
+  </data>
+  <data name="MSG019" xml:space="preserve">
+    <value>Đã có kế hoạch cho quý {0}.</value>
+  </data>
+  <data name="quanlyquyetdinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quanlyquyetdinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG026" xml:space="preserve">
+    <value>Dữ liệu đang sử dụng không thể xóa.</value>
+  </data>
+  <data name="YeuCauCongViec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\YeuCauCongViec.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG016" xml:space="preserve">
+    <value>Mật khẩu nhập không đúng</value>
+  </data>
+  <data name="Printer6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Printer6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG036" xml:space="preserve">
+    <value>Đã tạm ứng cho tháng {0}.</value>
+  </data>
+  <data name="PhieuYeuCau" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhieuYeuCau.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThuViec1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThuViec1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XetDuyet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XetDuyet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViTinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViTinh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG021" xml:space="preserve">
+    <value>Đã duyệt cho phiếu yêu cầu này.</value>
+  </data>
+  <data name="KeHoachXetDuyet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeHoachXetDuyet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG046" xml:space="preserve">
+    <value>Bảng lương tháng {0} năm {1} đã bị khóa vui lòng chọn ngày hiệu lực vào tháng khác.</value>
+  </data>
+  <data name="PhieuYeuCau1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhieuYeuCau1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeHoachChiTiet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeHoachChiTiet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel_edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel_edit.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG005" xml:space="preserve">
+    <value>{0} không được bỏ trống.</value>
+  </data>
+  <data name="MSG045" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu {0}.</value>
+  </data>
+  <data name="Excel_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Relative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Relative.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG011" xml:space="preserve">
+    <value>Lỗi dữ liệu vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG042" xml:space="preserve">
+    <value>Đỗ dữ liệu thành công.</value>
+  </data>
+  <data name="MSG023" xml:space="preserve">
+    <value>Mở file vừa xuất ?</value>
+  </data>
+  <data name="MSG010" xml:space="preserve">
+    <value>Lưu dữ liệu thay đổi.</value>
+  </data>
+  <data name="MSG024" xml:space="preserve">
+    <value>Sẽ được tạo ra khi lưu.</value>
+  </data>
+  <data name="MSG009" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu.</value>
+  </data>
+  <data name="XetDuyetKH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XetDuyetKH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closeShutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\closeShutdown.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG018" xml:space="preserve">
+    <value>Bạn phải lưu trước khi thêm thông tin chi tiết.</value>
+  </data>
+  <data name="MSG020" xml:space="preserve">
+    <value>{0} phải lớn hơn  {1}.</value>
+  </data>
+  <data name="Person" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Person.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserToGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserToGroup.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_Error_Title" xml:space="preserve">
+    <value>Lỗi!!!</value>
+  </data>
+  <data name="MSG043" xml:space="preserve">
+    <value>Chưa có quyết định thôi việc cho nhân viên này.</value>
+  </data>
+  <data name="ChuyenNganh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChuyenNganh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phai.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UngVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UngVien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="website51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\website51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG047" xml:space="preserve">
+    <value>Mỗi nhân viên chỉ có 1 hợp đồng {0}.</value>
+  </data>
+  <data name="PhieuYeuCau3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhieuYeuCau3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="addUngVien" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\addUngVien.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_checked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG004" xml:space="preserve">
+    <value>Tài khoản đã bị khóa.</value>
+  </data>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Process" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Process.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Huyen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Huyen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageBox_Question_Title" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="MSG038" xml:space="preserve">
+    <value>Bạn thật sự muốn khóa lương ? </value>
+  </data>
+  <data name="excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG025" xml:space="preserve">
+    <value>{0} phải nhỏ hơn  {1}.</value>
+  </data>
+  <data name="ChucDanh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChucDanh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="quanHe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quanHe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PhongBan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhongBan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lcd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lcd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG002" xml:space="preserve">
+    <value>Bạn phải nhập {0}.</value>
+  </data>
+  <data name="weding" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\weding.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checked1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\checked1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="documents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\documents.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ThuViec2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ThuViec2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG012" xml:space="preserve">
+    <value>Dữ liệu đang sử dụng không thể xóa.</value>
+  </data>
+  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG033" xml:space="preserve">
+    <value>Ứng viên {0} đã được bổ nhiệm.</value>
+  </data>
+  <data name="huyen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\huyen1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TuyenDung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TuyenDung.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BackGround_NS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackGround NS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG006" xml:space="preserve">
+    <value>Bạn có thật sự muốn xóa.</value>
+  </data>
+  <data name="Duoi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Duoi.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="decision" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\decision.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STATUS_UPDATING" xml:space="preserve">
+    <value>Đang cập nhật...</value>
+  </data>
+  <data name="MSG030" xml:space="preserve">
+    <value>Thời gian phải nằm trong quý {0}.</value>
+  </data>
+  <data name="ToChuc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ToChuc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG013" xml:space="preserve">
+    <value>Không tồn tại nhân viên này.</value>
+  </data>
+  <data name="Copy_of_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copy of Save.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG015" xml:space="preserve">
+    <value>Bạn phải nhập {0}.</value>
+  </data>
+  <data name="MSG041" xml:space="preserve">
+    <value>Bạn phải nhập {0} hoặc {1}.</value>
+  </data>
+  <data name="save4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save4.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="password" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\password.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG027" xml:space="preserve">
+    <value>Không tìm thấy dữ liệu nhân viên này</value>
+  </data>
+  <data name="LyDo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LyDo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trai" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Trai.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KeHoach2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KeHoach2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="process1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\process.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Edit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TonGiao" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TonGiao.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tacGia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tacGia.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STATUS_PROCESSING" xml:space="preserve">
+    <value>Đang xử lý...</value>
+  </data>
+  <data name="PhuCap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PhuCap.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG031" xml:space="preserve">
+    <value>Nhân viên {0} chưa có hình, vui lòng kiểm tra lại!</value>
+  </data>
+  <data name="MSG007" xml:space="preserve">
+    <value>Cập nhật dữ liệu thành công.</value>
+  </data>
+  <data name="mainmain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mainmain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hinh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinh1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG049" xml:space="preserve">
+    <value>Thời gian phải nằm trong năm {0}.</value>
+  </data>
+  <data name="MSG050" xml:space="preserve">
+    <value>Hợp đồng thử việc chưa kết thúc.</value>
+  </data>
+  <data name="MSG051" xml:space="preserve">
+    <value>Hợp đồng hiện tại chưa kết thúc.</value>
+  </data>
+  <data name="MSG052" xml:space="preserve">
+    <value>Phiếu yêu cầu tương tự đã có bạn phải chỉnh sửa hoặc đề xuất tăng số lượng.</value>
+  </data>
+  <data name="hinhnenchinh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hinhnenchinh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG053" xml:space="preserve">
+    <value>Bạn đang đăng nhập vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="MSG054" xml:space="preserve">
+    <value>Thành công.</value>
+  </data>
+  <data name="MSG055" xml:space="preserve">
+    <value>Thất bại.</value>
+  </data>
+  <data name="MSG056" xml:space="preserve">
+    <value>Cơ sở dữ liệu không phù hợp!Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="MSG057" xml:space="preserve">
+    <value>Bạn không cố quyền ghi trên thư mục cài đặt của ứng dụng!Vui lòng kiểm tra lại.</value>
+  </data>
+  <data name="MSG058" xml:space="preserve">
+    <value>Vui lòng khởi động lại ứng dụng.</value>
+  </data>
+  <data name="MSG059" xml:space="preserve">
+    <value>Tạm ứng không vượt quá 1/2 lương cơ bản.</value>
+  </data>
+</root>

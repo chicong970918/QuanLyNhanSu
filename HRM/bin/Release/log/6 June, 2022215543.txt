@@ -1,0 +1,32 @@
+System.InvalidCastException: Specified cast is not valid.
+   at System.Data.SqlClient.SqlBuffer.get_Int32()
+   at System.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at Read_NV_QuyetDinhBoNhiem(ObjectMaterializer`1 )
+   at System.Data.Linq.SqlClient.ObjectReaderCompiler.ObjectReader`2.MoveNext()
+   at System.Linq.Lookup`2.CreateForJoin(IEnumerable`1 source, Func`2 keySelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.<GroupJoinIterator>d__41`4.MoveNext()
+   at System.Linq.Enumerable.<SelectManyIterator>d__23`3.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HRM.DataAccess.TuyenDung.TD_UngVienBLL.GetDataByPhongBanQuyNamBoNhiem(Int32 pIdPhongBan, Int32 pQuy, Int32 pNam) in D:\NSTL\QuanLyNhanSu\HRM.DataAccess\TuyenDung\TD_UngVienBLL.cs:line 166
+   at HRM.Forms.NhanVien.SF213.LoadData() in D:\NSTL\QuanLyNhanSu\HRM\Forms\NhanVien\SF213.cs:line 221
+   at HRM.Forms.NhanVien.SF213.InitForm() in D:\NSTL\QuanLyNhanSu\HRM\Forms\NhanVien\SF213.cs:line 132
+   at HRM.Forms.NhanVien.SF213..ctor() in D:\NSTL\QuanLyNhanSu\HRM\Forms\NhanVien\SF213.cs:line 37
+   at HRM.Class.MngForms.ShowMDIChildForm(Forms pForm, Object[] arg) in D:\NSTL\QuanLyNhanSu\HRM\Class\MngForms.cs:line 275
+   at HRM.MainForm.mnuNhanVien_QuyetDinhBoNhiem_Click(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\Forms\MainForm.cs:line 1424
+   at System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   at System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   at System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

@@ -1,0 +1,7 @@
+D:\NSTL\QuanLyNhanSu\HRM.Entities\bin\Release\HRM.Entities.dll.config
+D:\NSTL\QuanLyNhanSu\HRM.Entities\bin\Release\HRM.Entities.dll
+D:\NSTL\QuanLyNhanSu\HRM.Entities\bin\Release\HRM.Entities.pdb
+D:\NSTL\QuanLyNhanSu\HRM.Entities\obj\Release\HRM.Entities.csproj.CoreCompileInputs.cache
+D:\NSTL\QuanLyNhanSu\HRM.Entities\obj\Release\HRM.Entities.dll
+D:\NSTL\QuanLyNhanSu\HRM.Entities\obj\Release\HRM.Entities.pdb
+D:\NSTL\QuanLyNhanSu\HRM.Entities\obj\Release\HRM.Entities.csproj.AssemblyReference.cache

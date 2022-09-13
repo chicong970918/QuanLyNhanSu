@@ -1,0 +1,31 @@
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at HRM.Forms.TuyenDung.SF103.LoadPhieuYeuCauTuyenDung() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 276
+   at HRM.Forms.TuyenDung.SF103.cboQuy_SelectedIndexChanged(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 759
+   at Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.OnSelectedIndexChanged(EventArgs e)
+   at Syncfusion.Windows.Forms.Tools.ComboBoxAdv.OnSelectedIndexChanged(EventArgs e)
+   at Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.set_SelectedIndex(Int32 value)
+   at Syncfusion.Windows.Forms.Tools.ComboBoxBaseDataBound.set_DataSource(Object value)
+   at HRM.Forms.TuyenDung.SF103.LoadCombobox() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 226
+   at HRM.Forms.TuyenDung.SF103.LoadData() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 209
+   at HRM.Forms.TuyenDung.SF103.InitForm() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 194
+   at HRM.Forms.TuyenDung.SF103..ctor() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF103.cs:line 35
+   at HRM.Class.MngForms.ShowMDIChildForm(Forms pForm, Object[] arg) in D:\NSTL\QuanLyNhanSu\HRM\Class\MngForms.cs:line 233
+   at HRM.MainForm.mnuTuyenDung_LapPYCTheoKH_Click(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\Forms\MainForm.cs:line 1300
+   at System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   at System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.ToolStripDropDown.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   at System.Windows.Forms.ToolStripDropDown.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

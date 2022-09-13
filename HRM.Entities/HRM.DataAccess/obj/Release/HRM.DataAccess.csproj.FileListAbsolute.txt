@@ -1,0 +1,10 @@
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\bin\Release\HRM.DataAccess.dll
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\bin\Release\HRM.DataAccess.pdb
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\bin\Release\HRM.Entities.dll
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\bin\Release\HRM.Entities.pdb
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\ResolveAssemblyReference.cache
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\HRM.DataAccess.Properties.Resources.resources
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\GenerateResource.read.1.tlog
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\GenerateResource.write.1.tlog
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\HRM.DataAccess.dll
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\HRM.DataAccess\obj\Release\HRM.DataAccess.pdb

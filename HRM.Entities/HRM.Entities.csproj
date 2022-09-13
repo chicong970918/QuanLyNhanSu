@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1379C791-7FED-4F1D-B5F0-72608A4D854D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRM.Entities</RootNamespace>
+    <AssemblyName>HRM.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheData.cs" />
+    <Compile Include="DataEntities.cs">
+      <DependentUpon>DataEntities.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataEntities.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataEntities.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Extended\DM_BieuMau.cs" />
+    <Compile Include="Extended\DM_CapTuyenDung.cs" />
+    <Compile Include="Extended\DM_ChiTietThuongNgayLe.cs" />
+    <Compile Include="Extended\DM_ChucDanh.cs" />
+    <Compile Include="Extended\DM_ChuyenNganh.cs" />
+    <Compile Include="Extended\DM_DanToc.cs" />
+    <Compile Include="Extended\DM_Huyen.cs" />
+    <Compile Include="Extended\DM_KhenThuong.cs" />
+    <Compile Include="Extended\DM_KyLuat.cs" />
+    <Compile Include="Extended\DM_LoaiHopDong.cs" />
+    <Compile Include="Extended\DM_LyDo.cs" />
+    <Compile Include="Extended\DM_ManHinh.cs" />
+    <Compile Include="Extended\DM_NgoaiNgu.cs" />
+    <Compile Include="Extended\DM_PhongBan.cs" />
+    <Compile Include="Extended\DM_PhuCap.cs" />
+    <Compile Include="Extended\DM_QuanHe.cs" />
+    <Compile Include="Extended\DM_Quy.cs" />
+    <Compile Include="Extended\DM_ThuongNgayLe.cs" />
+    <Compile Include="Extended\DM_Tinh.cs" />
+    <Compile Include="Extended\DM_TinhTrangHonNhan.cs" />
+    <Compile Include="Extended\DM_TonGiao.cs" />
+    <Compile Include="Extended\DM_TrinhDo.cs" />
+    <Compile Include="Extended\DM_TrinhDoTinHoc.cs" />
+    <Compile Include="Extended\DM_YeuCauCongViec.cs" />
+    <Compile Include="Extended\HT_Field.cs" />
+    <Compile Include="Extended\HT_ReferenceTable.cs" />
+    <Compile Include="Extended\HT_Table.cs" />
+    <Compile Include="Extended\NV_HopDong.cs" />
+    <Compile Include="Extended\NV_NhanVien.cs" />
+    <Compile Include="Extended\NV_QuyetDinhBoNhiem.cs" />
+    <Compile Include="Extended\NV_QuyetDinhKhenThuong.cs" />
+    <Compile Include="Extended\NV_QuyetDinhKyLuat.cs" />
+    <Compile Include="Extended\NV_QuyetDinhNangHeSoChuyenMon.cs" />
+    <Compile Include="Extended\NV_QuyetDinhNangHeSoLuong.cs" />
+    <Compile Include="Extended\NV_QuyetDinhThangChuc.cs" />
+    <Compile Include="Extended\NV_QuyetDinhThoiViec.cs" />
+    <Compile Include="Extended\QL_NguoiDung.cs" />
+    <Compile Include="Extended\QL_NguoiDungNhomNguoiDung.cs" />
+    <Compile Include="Extended\QL_NhomNguoiDung.cs" />
+    <Compile Include="Extended\QL_PhanQuyen.cs" />
+    <Compile Include="Extended\SP_GetTongHopChamCongThangResult.cs" />
+    <Compile Include="Extended\TD_BangKeHoachTuyenDung.cs" />
+    <Compile Include="Extended\TD_ChiTietDanhGiaSauThuViec.cs" />
+    <Compile Include="Extended\TD_ChiTietKeHoachThuViec.cs" />
+    <Compile Include="Extended\TD_ChiTietKeHoachTuyenDung.cs" />
+    <Compile Include="Extended\TD_DanhGiaThuViec.cs" />
+    <Compile Include="Extended\TD_KeHoachThuViec.cs" />
+    <Compile Include="Extended\TD_PhieuYeuCauTuyenDung.cs" />
+    <Compile Include="Extended\NV_QuanHeGiaDinh.cs" />
+    <Compile Include="Extended\NV_QuaTrinhCongTac.cs" />
+    <Compile Include="Extended\TD_UngVien.cs" />
+    <Compile Include="Extended\TD_YeuCauCongViec.cs" />
+    <Compile Include="Extended\TL_BangLuong.cs" />
+    <Compile Include="Extended\TL_ChamCong.cs" />
+    <Compile Include="Extended\TL_KhoaLuong.cs" />
+    <Compile Include="Extended\TL_TamUng.cs" />
+    <Compile Include="Extended\TL_TongHopChamCong.cs" />
+    <Compile Include="Extended\TL_TongHopChamCongNhanVien.cs" />
+    <Compile Include="Extended\User.cs" />
+    <Compile Include="Extended\EntityBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataEntities.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataEntities.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataEntities.dbml.layout">
+      <DependentUpon>DataEntities.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

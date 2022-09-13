@@ -1,0 +1,23 @@
+System.InvalidOperationException: The null value cannot be assigned to a member with type System.Int32 which is a non-nullable value type.
+   at Read_Int32(ObjectMaterializer`1 )
+   at System.Data.Linq.SqlClient.ObjectReaderCompiler.ObjectReader`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at HRM.DataAccess.TuyenDung.TD_UngVienBLL.GetTrinhDoTheoPYC(Int32 pIdPhongBan, Int32 pQuy, Int32 pNam) in D:\NSTL\QuanLyNhanSu\HRM.DataAccess\TuyenDung\TD_UngVienBLL.cs:line 0
+   at HRM.Forms.TuyenDung.SF111.LoadComBoBox() in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF111.cs:line 414
+   at HRM.Forms.TuyenDung.SF111.SF111_Load(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\Forms\TuyenDung\SF111.cs:line 572
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at Syncfusion.Windows.Forms.Office2007Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message& m)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.Form.WmShowWindow(Message& m)
+   at System.Windows.Forms.Form.WndProc(Message& m)
+   at Syncfusion.Windows.Forms.Office2007Form.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

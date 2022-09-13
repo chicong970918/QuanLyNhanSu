@@ -1,0 +1,1173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0A5BF5B3-56F7-4252-B457-B13139D5FBD4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HRM</RootNamespace>
+    <AssemblyName>HRM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>HRM.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HRM.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SpreadsheetGear, Version=6.0.3.151, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\S&amp;D\Desktop\DLL\SpreadsheetGear.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.DocIO.Base, Version=8.204.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\programSoft\sys\Assemblies\3.5\Syncfusion.DocIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Grouping.Windows, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Windows, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.GridConverter.Windows, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.GridHelperClasses.Windows, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Grouping.Base, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base, Version=19.2400.0.44, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Syncfusion.Pdf.WinForms.17.4.0.44\lib\net40\Syncfusion.Pdf.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=8.203.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base, Version=8.204.0.18, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\programSoft\sys\Assemblies\3.5\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\frmReportBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\frmReportBase.Designer.cs">
+      <DependentUpon>frmReportBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\GridBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\GridBaseForm.Designer.cs">
+      <DependentUpon>GridBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\TuyenDungDetailBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\TuyenDungDetailBaseForm.Designer.cs">
+      <DependentUpon>TuyenDungDetailBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\DanhMucBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\DanhMucBase.Designer.cs">
+      <DependentUpon>DanhMucBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\TuyenDungBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseForms\TuyenDungBaseForm.Designer.cs">
+      <DependentUpon>TuyenDungBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ConfigCommon.cs" />
+    <Compile Include="Class\MngForms.cs" />
+    <Compile Include="Class\UICommon.cs" />
+    <Compile Include="Export\Constants.cs" />
+    <Compile Include="Export\DrawingCommon.cs" />
+    <Compile Include="Export\ExcelExport.cs" />
+    <Compile Include="Export\FileCommon.cs" />
+    <Compile Include="Export\Global.cs" />
+    <Compile Include="Export\NumberReader.cs" />
+    <Compile Include="Export\WordExport.cs" />
+    <Compile Include="Class\ValidationException.cs" />
+    <Compile Include="Forms\Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Author.Designer.cs">
+      <DependentUpon>Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Backup\SF110BK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Backup\SF110BK.Designer.cs">
+      <DependentUpon>SF110BK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Backup\SFPYC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Backup\SFPYC.Designer.cs">
+      <DependentUpon>SFPYC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CauHinhSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CauHinhSQL.Designer.cs">
+      <DependentUpon>CauHinhSQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF301.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF301.Designer.cs">
+      <DependentUpon>SF301.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF302.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF302.Designer.cs">
+      <DependentUpon>SF302.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF303.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF303.Designer.cs">
+      <DependentUpon>SF303.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF304.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF304.Designer.cs">
+      <DependentUpon>SF304.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF300.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF300.Designer.cs">
+      <DependentUpon>SF300.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF305.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF305.Designer.cs">
+      <DependentUpon>SF305.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF306.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF306.Designer.cs">
+      <DependentUpon>SF306.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF308.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF308.Designer.cs">
+      <DependentUpon>SF308.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF309.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF309.Designer.cs">
+      <DependentUpon>SF309.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF310.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF310.Designer.cs">
+      <DependentUpon>SF310.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF311.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF311.Designer.cs">
+      <DependentUpon>SF311.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF312.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChamCong_Luong\SF312.Designer.cs">
+      <DependentUpon>SF312.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChangePwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChangePwd.Designer.cs">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF016.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF016.Designer.cs">
+      <DependentUpon>SF016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF001.Designer.cs">
+      <DependentUpon>SF001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseForms\DanhMucCoSoSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF002.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF002.Designer.cs">
+      <DependentUpon>SF002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF003.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF003.Designer.cs">
+      <DependentUpon>SF003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF004.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF004.Designer.cs">
+      <DependentUpon>SF004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF005.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF005.Designer.cs">
+      <DependentUpon>SF005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF006.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF006.Designer.cs">
+      <DependentUpon>SF006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF007.Designer.cs">
+      <DependentUpon>SF007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF008.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF008.Designer.cs">
+      <DependentUpon>SF008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF009.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF009.Designer.cs">
+      <DependentUpon>SF009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF011.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF011.Designer.cs">
+      <DependentUpon>SF011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF010.Designer.cs">
+      <DependentUpon>SF010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF012.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF012.Designer.cs">
+      <DependentUpon>SF012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF013.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF013.Designer.cs">
+      <DependentUpon>SF013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF014.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF014.Designer.cs">
+      <DependentUpon>SF014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF015.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF015.Designer.cs">
+      <DependentUpon>SF015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF017.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF017.Designer.cs">
+      <DependentUpon>SF017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF018.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF018.Designer.cs">
+      <DependentUpon>SF018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF019.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DanhMuc\SF019.Designer.cs">
+      <DependentUpon>SF019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF900.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF900.Designer.cs">
+      <DependentUpon>SF900.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF901.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF901.Designer.cs">
+      <DependentUpon>SF901.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF902.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF902.Designer.cs">
+      <DependentUpon>SF902.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF903.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF903.designer.cs">
+      <DependentUpon>SF903.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF904.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HeThong\SF904.Designer.cs">
+      <DependentUpon>SF904.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF200.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF200.Designer.cs">
+      <DependentUpon>SF200.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF201.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF201.Designer.cs">
+      <DependentUpon>SF201.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF202.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF202.Designer.cs">
+      <DependentUpon>SF202.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF203.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF203.Designer.cs">
+      <DependentUpon>SF203.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF204.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF204.Designer.cs">
+      <DependentUpon>SF204.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF205.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF205.Designer.cs">
+      <DependentUpon>SF205.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF206.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF206.Designer.cs">
+      <DependentUpon>SF206.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF207.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF207.Designer.cs">
+      <DependentUpon>SF207.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF208.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF208.Designer.cs">
+      <DependentUpon>SF208.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF209.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF209.Designer.cs">
+      <DependentUpon>SF209.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF210.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF210.Designer.cs">
+      <DependentUpon>SF210.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF211.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF211.Designer.cs">
+      <DependentUpon>SF211.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF212.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF212.Designer.cs">
+      <DependentUpon>SF212.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF213.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF213.Designer.cs">
+      <DependentUpon>SF213.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF214.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF214.Designer.cs">
+      <DependentUpon>SF214.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF215.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NhanVien\SF215.Designer.cs">
+      <DependentUpon>SF215.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF103.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF103.Designer.cs">
+      <DependentUpon>SF103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF102.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF102.Designer.cs">
+      <DependentUpon>SF102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF100.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF100.Designer.cs">
+      <DependentUpon>SF100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF101.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF101.Designer.cs">
+      <DependentUpon>SF101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF104.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF104.Designer.cs">
+      <DependentUpon>SF104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF105.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF105.Designer.cs">
+      <DependentUpon>SF105.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF106.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF106.Designer.cs">
+      <DependentUpon>SF106.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF107.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF107.Designer.cs">
+      <DependentUpon>SF107.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF108.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF108.Designer.cs">
+      <DependentUpon>SF108.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF109.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF109.Designer.cs">
+      <DependentUpon>SF109.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF115.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF115.Designer.cs">
+      <DependentUpon>SF115.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF111.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF111.Designer.cs">
+      <DependentUpon>SF111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF112.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF112.Designer.cs">
+      <DependentUpon>SF112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF113.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF113.Designer.cs">
+      <DependentUpon>SF113.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF114.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF114.Designer.cs">
+      <DependentUpon>SF114.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF110.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF110.Designer.cs">
+      <DependentUpon>SF110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF116.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF116.Designer.cs">
+      <DependentUpon>SF116.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF117.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TuyenDung\SF117.Designer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SF001.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SF001.Designer.cs">
+      <DependentUpon>SF001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SF118.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SF118.Designer.cs">
+      <DependentUpon>SF118.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseForms\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\frmReportBase.resx">
+      <DependentUpon>frmReportBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\GridBaseForm.resx">
+      <DependentUpon>GridBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\DanhMucBase.resx">
+      <DependentUpon>DanhMucBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\TuyenDungBaseForm.resx">
+      <DependentUpon>TuyenDungBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\TuyenDungDetailBaseForm.resx">
+      <DependentUpon>TuyenDungDetailBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Author.resx">
+      <DependentUpon>Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Backup\SF110BK.resx">
+      <DependentUpon>SF110BK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Backup\SFPYC.resx">
+      <DependentUpon>SFPYC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CauHinhSQL.resx">
+      <DependentUpon>CauHinhSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF301.resx">
+      <DependentUpon>SF301.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF302.resx">
+      <DependentUpon>SF302.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF303.resx">
+      <DependentUpon>SF303.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF304.resx">
+      <DependentUpon>SF304.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF300.resx">
+      <DependentUpon>SF300.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF305.resx">
+      <DependentUpon>SF305.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF306.resx">
+      <DependentUpon>SF306.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF308.resx">
+      <DependentUpon>SF308.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF309.resx">
+      <DependentUpon>SF309.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF310.resx">
+      <DependentUpon>SF310.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF311.resx">
+      <DependentUpon>SF311.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChamCong_Luong\SF312.resx">
+      <DependentUpon>SF312.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChangePwd.resx">
+      <DependentUpon>ChangePwd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF016.resx">
+      <DependentUpon>SF016.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF001.resx">
+      <DependentUpon>SF001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseForms\DanhMucCoSoSelector.resx">
+      <DependentUpon>DanhMucCoSoSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF002.resx">
+      <DependentUpon>SF002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF003.resx">
+      <DependentUpon>SF003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF004.resx">
+      <DependentUpon>SF004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF005.resx">
+      <DependentUpon>SF005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF006.resx">
+      <DependentUpon>SF006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF007.resx">
+      <DependentUpon>SF007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF008.resx">
+      <DependentUpon>SF008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF009.resx">
+      <DependentUpon>SF009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF010.resx">
+      <DependentUpon>SF010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF011.resx">
+      <DependentUpon>SF011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF013.resx">
+      <DependentUpon>SF013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF014.resx">
+      <DependentUpon>SF014.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF015.resx">
+      <DependentUpon>SF015.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF012.resx">
+      <DependentUpon>SF012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF017.resx">
+      <DependentUpon>SF017.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF018.resx">
+      <DependentUpon>SF018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DanhMuc\SF019.resx">
+      <DependentUpon>SF019.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeThong\SF900.resx">
+      <DependentUpon>SF900.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeThong\SF901.resx">
+      <DependentUpon>SF901.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeThong\SF902.resx">
+      <DependentUpon>SF902.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeThong\SF903.resx">
+      <DependentUpon>SF903.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HeThong\SF904.resx">
+      <DependentUpon>SF904.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF200.resx">
+      <DependentUpon>SF200.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF201.resx">
+      <DependentUpon>SF201.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF202.resx">
+      <DependentUpon>SF202.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF203.resx">
+      <DependentUpon>SF203.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF204.resx">
+      <DependentUpon>SF204.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF205.resx">
+      <DependentUpon>SF205.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF206.resx">
+      <DependentUpon>SF206.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF207.resx">
+      <DependentUpon>SF207.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF208.resx">
+      <DependentUpon>SF208.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF209.resx">
+      <DependentUpon>SF209.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF210.resx">
+      <DependentUpon>SF210.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF211.resx">
+      <DependentUpon>SF211.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF212.resx">
+      <DependentUpon>SF212.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF213.resx">
+      <DependentUpon>SF213.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF214.resx">
+      <DependentUpon>SF214.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NhanVien\SF215.resx">
+      <DependentUpon>SF215.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF103.resx">
+      <DependentUpon>SF103.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF102.resx">
+      <DependentUpon>SF102.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF100.resx">
+      <DependentUpon>SF100.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF101.resx">
+      <DependentUpon>SF101.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF104.resx">
+      <DependentUpon>SF104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF105.resx">
+      <DependentUpon>SF105.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF106.resx">
+      <DependentUpon>SF106.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF107.resx">
+      <DependentUpon>SF107.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF108.resx">
+      <DependentUpon>SF108.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF109.resx">
+      <DependentUpon>SF109.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF115.resx">
+      <DependentUpon>SF115.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF111.resx">
+      <DependentUpon>SF111.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF112.resx">
+      <DependentUpon>SF112.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF113.resx">
+      <DependentUpon>SF113.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF114.resx">
+      <DependentUpon>SF114.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF110.resx">
+      <DependentUpon>SF110.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF116.resx">
+      <DependentUpon>SF116.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TuyenDung\SF117.resx" />
+    <EmbeddedResource Include="SF001.resx">
+      <DependentUpon>SF001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SF118.resx">
+      <DependentUpon>SF118.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Templates\BoNhiemNhanSu.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DanhSachNhanVienTheoPhongBan.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\DanhSachUngVienDau.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\HopDongLaoDong.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\HopDongThuViec.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\HoSoUngVien.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\KeHoachThuViec.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\KeHoachTuyenDung.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\PhieuYeuCauTuyenDung.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhKhenThuong.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhKyLuat.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhNangHeSoChuyenMon.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhNangHeSoLuong.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhThangCap.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\QuyetDinhThoiViec.doc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\TaiLieuHuongDan.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\ThongBaoTuyenDung.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Project>{88D0C23B-9061-4CB4-A1C1-522323D5A845}</Project>
+      <Name>Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRM.DataAccess\HRM.DataAccess.csproj">
+      <Project>{42F1FE17-DD3F-4E06-A58B-CD7F7B65B409}</Project>
+      <Name>HRM.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HRM.Entities\HRM.Entities.csproj">
+      <Project>{1379C791-7FED-4F1D-B5F0-72608A4D854D}</Project>
+      <Name>HRM.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\log4net.xml" />
+    <Content Include="DLL\SpreadsheetGear.dll" />
+    <Content Include="HRM.ico" />
+    <Content Include="Relative.ico" />
+    <None Include="Resources\hinhnenchinh.png" />
+    <None Include="Resources\hinh1.png" />
+    <None Include="Resources\mainmain.png" />
+    <None Include="Resources\flash.png" />
+    <None Include="Resources\nhansu.jpg" />
+    <None Include="Resources\useruser.jpg" />
+    <None Include="Resources\updateword.jpg" />
+    <None Include="Resources\login2.jpg" />
+    <None Include="Resources\quanlyquyetdinh.jpg" />
+    <None Include="Resources\bonhiem.jpg" />
+    <None Include="Resources\decision.jpg" />
+    <None Include="Resources\resrt.jpg" />
+    <None Include="Resources\documents.jpg" />
+    <None Include="Resources\user.jpg" />
+    <None Include="Resources\login1.jpg" />
+    <None Include="Resources\resetpassword.jpg" />
+    <None Include="Resources\lcd.jpg" />
+    <None Include="Resources\shutdowns.jpg" />
+    <None Include="Resources\process.jpg" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\Process.gif" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\Printer6.png" />
+    <None Include="Resources\Printer5.jpg" />
+    <None Include="Resources\Printer3.jpg" />
+    <None Include="Resources\Excel_edit2.gif" />
+    <None Include="Resources\Excel_edit.gif" />
+    <None Include="Resources\Excel_48.png" />
+    <None Include="Resources\ChamCong.gif" />
+    <None Include="Resources\Printer4.jpg" />
+    <None Include="Resources\aaaa.jpg" />
+    <None Include="Resources\closeShutdown.jpg" />
+    <None Include="Resources\checked1.jpg" />
+    <None Include="Resources\checked.jpg" />
+    <None Include="Resources\Tren.ico" />
+    <None Include="Resources\Trai.ico" />
+    <None Include="Resources\Phai.ico" />
+    <None Include="Resources\Duoi.ico" />
+    <None Include="Resources\password.ico" />
+    <None Include="Resources\Login.jpg" />
+    <None Include="Resources\BackGround NS.jpg" />
+    <None Include="Resources\BackGround1.jpg" />
+    <None Include="Resources\BackGround.jpg" />
+    <None Include="Resources\user1.jpg" />
+    <None Include="Resources\UserToGroup.jpg" />
+    <None Include="Resources\UserGroup.jpg" />
+    <None Include="Resources\User.png" />
+    <None Include="Resources\addUngVien.png" />
+    <None Include="Resources\ThuViec2.jpg" />
+    <None Include="Resources\ThuViec1.jpg" />
+    <None Include="Resources\ThuViec.jpg" />
+    <None Include="Resources\HopDong.png" />
+    <None Include="Resources\UngVien.png" />
+    <None Include="Resources\ThongBao.jpg" />
+    <None Include="Resources\XetDuyetKH.jpg" />
+    <None Include="Resources\XetDuyet.jpg" />
+    <None Include="Resources\PhieuYeuCau3.jpg" />
+    <None Include="Resources\PhieuYeuCau1.gif" />
+    <None Include="Resources\PhieuYeuCau.jpg" />
+    <None Include="Resources\PhuCap.jpg" />
+    <None Include="Resources\Luong.gif" />
+    <None Include="Resources\tacGia.png" />
+    <None Include="Resources\Help.png" />
+    <None Include="Resources\KeHoachXetDuyet.jpg" />
+    <None Include="Resources\KeHoachTD1.jpg" />
+    <None Include="Resources\KeHoachChiTiet.jpg" />
+    <None Include="Resources\KeHoach2.jpg" />
+    <None Include="Resources\Tinh.jpg" />
+    <None Include="Resources\huyen1.gif" />
+    <None Include="Resources\Huyen.png" />
+    <None Include="Resources\YeuCauCongViec.jpg" />
+    <None Include="Resources\LyDo.gif" />
+    <None Include="Resources\website51.jpg" />
+    <None Include="Resources\ChucDanh1.png" />
+    <None Include="Resources\ChucDanh.png" />
+    <None Include="Resources\TuyenDung.gif" />
+    <None Include="Resources\ViTinh.jpg" />
+    <None Include="Resources\TonGiao.png" />
+    <None Include="Resources\weding.gif" />
+    <None Include="Resources\quanHe.jpg" />
+    <None Include="Resources\NgoaiNgu.jpg" />
+    <None Include="Resources\ChuyenNganh.jpg" />
+    <None Include="Resources\Person.jpg" />
+    <None Include="Resources\Word.jpg" />
+    <None Include="Resources\ToChuc.jpg" />
+    <None Include="Resources\PhongBan2.jpg" />
+    <None Include="Resources\PhongBan1.jpg" />
+    <None Include="Resources\PhongBan.jpg" />
+    <None Include="Resources\Nha.jpg" />
+    <None Include="Resources\Edit.jpg" />
+    <None Include="Resources\Canhan.jpg" />
+    <None Include="Resources\save4.ico" />
+    <None Include="Resources\AddItem1.ico" />
+    <None Include="Resources\AddItem.ico" />
+    <None Include="Resources\Search.jpg" />
+    <None Include="Resources\save3.png" />
+    <None Include="Resources\save2.gif" />
+    <None Include="Resources\save1.jpg" />
+    <None Include="Resources\printer2.png" />
+    <None Include="Resources\printer.jpg" />
+    <None Include="Resources\excel.jpg" />
+    <None Include="Resources\delete1.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add2.jpg" />
+    <None Include="Resources\add1.png" />
+    <None Include="Resources\add.jpg" />
+    <None Include="Resources\Search.bmp" />
+    <None Include="Resources\add_user.ico" />
+    <None Include="Resources\Search.ico" />
+    <None Include="Resources\Relative.ico" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\Copy of Save.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

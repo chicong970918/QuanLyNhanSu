@@ -1,0 +1,15 @@
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\HRM.DataAccess.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\HRM.DataAccess.pdb
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\HRM.Entities.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\HRM.Entities.pdb
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\bin\Debug\HRM.Entities.dll.config
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.csproj.AssemblyReference.cache
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.Properties.Resources.resources
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.csproj.GenerateResource.cache
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.csproj.CoreCompileInputs.cache
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.csproj.CopyComplete
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.dll
+D:\NSTL\QuanLyNhanSu\HRM.DataAccess\obj\Debug\HRM.DataAccess.pdb

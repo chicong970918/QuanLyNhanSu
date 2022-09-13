@@ -1,0 +1,15 @@
+System.InvalidOperationException: Current item cannot be removed from the list because there is no current item.
+   at System.Windows.Forms.BindingSource.RemoveCurrent()
+   at HRM.Forms.NhanVien.SF212.btnXoaQuanHe_Click(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\Forms\NhanVien\SF212.cs:line 505
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnClick(EventArgs e)
+   at Syncfusion.Windows.Forms.ButtonAdv.OnClick(EventArgs e)
+   at System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   at Syncfusion.Windows.Forms.ButtonAdv.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   at System.Windows.Forms.Button.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)

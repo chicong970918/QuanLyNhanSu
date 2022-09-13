@@ -1,0 +1,12 @@
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\bin\Release\Library.dll.config
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\bin\Release\Library.dll
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\bin\Release\Library.pdb
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\ResolveAssemblyReference.cache
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.Controls.HRMPanel.resources
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.Forms.LoadingForm.resources
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.HRMGrigouping.resources
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.Properties.Resources.resources
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\GenerateResource.read.1.tlog
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\GenerateResource.write.1.tlog
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.dll
+E:\STUDY\DO AN\NhansuOnline\New\QuanLyNhanSu\Library\obj\x86\Release\Library.pdb

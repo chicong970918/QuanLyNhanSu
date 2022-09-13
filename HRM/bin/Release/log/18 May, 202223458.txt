@@ -1,0 +1,21 @@
+System.InvalidOperationException: Nullable object must have a value.
+   at System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   at HRM.DataAccess.ChamCong_TinhLuong.TL_TamUngBLL.CheckedTamUng(Int32 pIdNhanVien, Decimal pSoTien) in D:\NSTL\QuanLyNhanSu\HRM.DataAccess\ChamCong_TinhLuong\TL_TamUngBLL.cs:line 0
+   at HRM.Forms.ChamCong_Luong.SF308.Validator() in D:\NSTL\QuanLyNhanSu\HRM\Forms\ChamCong_Luong\SF308.cs:line 263
+   at HRM.Forms.ChamCong_Luong.SF308.SaveData() in D:\NSTL\QuanLyNhanSu\HRM\Forms\ChamCong_Luong\SF308.cs:line 124
+   at HRM.BaseForms.GridBaseForm.btnSave_Click(Object sender, EventArgs e) in D:\NSTL\QuanLyNhanSu\HRM\BaseForms\GridBaseForm.cs:line 62
+   at System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   at System.Windows.Forms.ToolStripButton.OnClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   at System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   at System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   at System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   at Syncfusion.Windows.Forms.Tools.ToolStripEx.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
